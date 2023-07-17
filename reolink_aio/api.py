@@ -1035,7 +1035,7 @@ class Host:
             if self.api_version("ispBright", channel) > 0:
                 self._capabilities[channel].append("isp_bright")
 
-            if self.api_version("ispDayNight", channel) > 0 and self.daynight_state(channel) is not None:
+            if self.daynight_state(channel) is not None:
                 self._capabilities[channel].append("dayNight")
 
             if self.backlight_state(channel) is not None:
